@@ -102,7 +102,7 @@ def filter_overweight_people(people_data):
 def get_valid_alphabetic_input(name):
     while True:
         value = input(name).strip()
-        if value.isalpha():
+        if value.isalpha() or not value:
             return value
         print("Invalid input. Please enter alphabetic characters only.")
 
